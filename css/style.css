@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #3e2f2b;
+}
+body .main {
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #0f0e17;
+  height: 600px;
+  width: 450px;
+  margin: auto;
+  color: #fff3ec;
+  background-color: #0f0e17;
+}
+body .main .screen {
+  width: 95%;
+  height: 120px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+  gap: 5px;
+  background-color: #79605a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .main .screen .screen-memory,
+body .main .screen .screen-value {
+  padding: 0 15px 0 0;
+  text-align: end;
+  border: none;
+  line-height: 1.4;
+  background-color: #79605a;
+  color: #fff3ec;
+  outline: none;
+  cursor: default;
+}
+body .main .screen .screen-memory:enabled,
+body .main .screen .screen-value:enabled {
+  border: none;
+}
+body .main .screen .screen-memory {
+  font-size: 23px;
+}
+body .main .screen .screen-value {
+  font-size: 50px;
+}
+body .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px auto;
+  width: 95%;
+  justify-content: center;
+}
+body .buttons .btn {
+  border: 1px solid rgba(214, 213, 213, 0.204);
+  width: 80px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(90%);
+  font-size: 25px;
+  border-radius: 3px;
+}
+body .buttons .btn:hover {
+  cursor: pointer;
+  border-color: rgb(199, 197, 197);
+  transform: scale(1.02);
+  filter: brightness(100%);
+}
+body .buttons .btn#delete {
+  background-color: #f3a750;
+  width: 180px;
+}
+body .buttons .btn#delete-one {
+  background-color: #f38350;
+  width: 180px;
+}
+body .buttons .btn#equal {
+  background-color: #e53170;
+  width: 180px;
+}
+body .buttons .btn.operator {
+  background-color: #a7a9be;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="screen">
+        <input class="screen-memory" readonly />
+        <input class="screen-value" readonly />
+      </div>
+      <div class="buttons">
+        <div id="delete-one" class="btn operator">CE</div>
+        <div id="delete" class="btn" onclick="clearDisplay()" value="all-clear">
+          DEL
+        </div>
+
+        <div id="precent" class="btn operator" value="%">%</div>
+        <div id="squared " class="btn operator" value="pow">x<sup>2</sup></div>
+        <div id="negative " class="btn operator" value="negative">+/-</div>
+        <div id="division" class="btn operator" value="/">&#247;</div>
+        <div id="7" class="btn number" value="7">7</div>
+        <div id="8" class="btn number" value="8">8</div>
+        <div id="9" class="btn number" value="9">9</div>
+        <div id="multiply" class="btn operator" value="*">&#215;</div>
+
+        <div id="4" class="btn number" value="4">4</div>
+        <div id="5" class="btn number" value="5">5</div>
+        <div id="6" class="btn number" value="6">6</div>
+        <div id="increase" class="btn operator" value="-">-</div>
+
+        <div id="1" class="btn number" value="1">1</div>
+        <div id="2" class="btn number" value="2">2</div>
+        <div id="3" class="btn number" value="3">3</div>
+        <div id="decrease" class="btn operator" value="+">+</div>
+        <div id="0" class="btn number" value="0">0</div>
+        <div id="dot" class="btn" value=".">.</div>
+        <div id="equal" class="btn" value="=">=</div>
+      </div>
+    </div>
+  </body>
+</html>
